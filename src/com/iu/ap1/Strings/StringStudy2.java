@@ -4,7 +4,7 @@ public class StringStudy2 {
 
 	public static void main(String[] args) {
 		
-		String email = "abc@123@gmail.com";
+		String email = "a@bc@123@gmail.com";
 		
 		int idx = email.lastIndexOf("@");
 		System.out.println(idx);
@@ -12,6 +12,15 @@ public class StringStudy2 {
 		System.out.println(email.length());
 		
 		
+		for(int i=0;i<email.length();i++) {
+			System.out.println(email.charAt(i));
+			
+		}
+		
+	System.out.println("Bf Email:" + email);
+	 email = email.replace("@", "_");
+	System.out.println("Af Email:" + email);
+	
 		
 	}
 
