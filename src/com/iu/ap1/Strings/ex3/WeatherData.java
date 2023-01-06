@@ -12,13 +12,23 @@ public class WeatherData {
 	}
 	//init
 	// data를 파싱해사 각 data를 Dto에 대입하고 Dto들을 리턴 
-	public void init() {  
-	String [] result   = data.split(",");
-	
-	for (int i =0 ;i< result.length;i++) {
-	System.out.println(result[i]);	
+	public WeatherDTO[] init() {  
+	String [] datas   =this. data.split(",");
+	WeatherDTO[] wethers = new WeatherDTO[datas.length/4];
+	int idx = 0;
+	for (int i =0 ;i< datas.length;i++) {
+          WeatherDTO weatherDTO = new WeatherDTO();
+          weatherDTO.setCity(datas[i]);
+          weatherDTO.setGion(datas[i+1]);
+          weatherDTO.setStatus(datas[i+2]);
+          weatherDTO.setMise(datas[i+3]);
+          
+          
+          wethers[idx] = weatherDTO;
+          idx++;
 		
 	}
+	return wethers;
 	}
 	
 	  

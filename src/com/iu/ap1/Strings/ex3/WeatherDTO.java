@@ -1,17 +1,20 @@
 package com.iu.ap1.Strings.ex3;
 
-public class WeatherDTO extends WeatherData  {
+public class WeatherDTO  {
 
 	private String city;
 	private String gion;
 	private String status;
 	private String mise;
+	public int getCity;
 	
 	
 	
 	
 	public String getCity() {
 		return city;
+		
+		
 	}
 	public void setCity(String city) {
 		this.city = city;

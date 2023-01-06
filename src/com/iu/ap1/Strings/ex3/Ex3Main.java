@@ -7,7 +7,7 @@ public class Ex3Main {
 		System.out.println("start");
 		
 		WeatherController weatherController = new WeatherController();
-		 weatherController.Start();
+		 weatherController.start();
 		System.out.println("finish");
 		
 	}

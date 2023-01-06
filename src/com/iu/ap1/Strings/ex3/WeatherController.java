@@ -22,7 +22,7 @@ public class WeatherController {
 		
 		int count = sc.nextInt();
 		
-		WeatherDTO [] weatherDTOs = null;
+		WeatherDTO[] weatherDTOs = null;
 		
 		while(check) {
 			System.out.println("1.날씨 정보 초기화");
@@ -38,7 +38,7 @@ public class WeatherController {
 			
 			case 1:
 				System.out.println(" 초기화 완료 되었습니다");
-			weatherDTOs  = weatherData.init();
+			weatherDTOs =weatherData.init();
 			break;
 			
 			case 2:
