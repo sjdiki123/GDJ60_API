@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class Client2 {
 
@@ -18,6 +19,11 @@ public class Client2 {
 		//1번 : 서버에서 점심메뉴 하나를보내줌 출력
 		//2번 서버에서 저녁 메뉴 하나를 보내줌
 		//3종료
+		Scanner scanner = new 
+		
+		
+		
+		
 	String[] lunch = {"라면 " , " 햄버거" , "짜장면","고기"};
 		Socket socket = null;
 		OutputStream os=null;

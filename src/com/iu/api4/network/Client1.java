@@ -15,7 +15,7 @@ public class Client1 {
 
 	public static void main(String[] args) {
 
-		Socket socket = null;
+		Socket socket = null;           
 		OutputStream os=null;
 		OutputStreamWriter ow=null;
 		BufferedWriter bw = null;

@@ -26,16 +26,21 @@ public class Server1 {
 	 BufferedWriter bw;
 	  
 		try {
+			
+			
+			
 			ss = new ServerSocket(8282);
 			System.out.println("client접속을 기다리는 중 ");
 			sc=ss.accept();
 			System.out.println("client 접속 성공");
-			
+			while(true) {
 			is=	sc.getInputStream();
 			ir = new InputStreamReader(is);
 			br = new BufferedReader(ir);
 			
 			String msg = br.readLine();
+			
+			
 			System.out.println("cilent" + msg);
 			
 			
@@ -47,6 +52,13 @@ public class Server1 {
 			
 			bw.write(msg+"\r\n");
 			bw.flush();
+			
+			
+			if(msg.toUpperCase().equals("Q")) {
+				break;
+			}
+			}
+			
 			
 			
 		} catch (Exception e) {
