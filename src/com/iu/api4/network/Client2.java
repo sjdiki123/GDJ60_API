@@ -19,7 +19,8 @@ public class Client2 {
 		//1번 : 서버에서 점심메뉴 하나를보내줌 출력
 		//2번 서버에서 저녁 메뉴 하나를 보내줌
 		//3종료
-		Scanner scanner = new 
+		Scanner scanner = new Scanner(System.in);
+		
 		
 		
 		
